@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    width:500px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 15%);
+    overflow: hidden;
+}
+#display{
+    height: 150px;
+    width: 100%;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    font-size: 60px;
+}
+.buttons{
+    font-size: 10px;
+    padding: 5px;
+    margin: none;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;  
+}
+button{
+    border-radius: 50px;
+    font-size: 50px;
+    color: white;
+    background-color: hsl(0, 0%, 30%);
+    border: none;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.buttons button:hover {
+    border: 2px solid white;
+    background-color: darkgray;
+}
+.buttons button:active {
+    background-color: #333;
+    transform: translateY(2px);
+}
+
+.operator-button{
+    background-color: hsl(35, 100%, 40% );
+}
